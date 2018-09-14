@@ -60,12 +60,12 @@ Icon.propTypes = {
   onPress: PropTypes.func,
   type: PropTypes.oneOf( Object.keys( prefixTypes ) ),
   iconStyle: PropTypes.oneOfType( [
-    PropTypes.object,
-    PropTypes.number
+    PropTypes.array,
+    PropTypes.object
   ] ),
   containerStyle: PropTypes.oneOfType( [
-    PropTypes.object,
-    PropTypes.number
+    PropTypes.array,
+    PropTypes.object
   ] ),
   activeOpacity: PropTypes.number
 };
@@ -75,8 +75,7 @@ Icon.defaultProps = {
   size: 20,
   color: "black",
   type: "regular",
-  activeOpacity: 0.2,
-  type: "regular"
+  activeOpacity: 0.2
 };
 
 export default Icon;
